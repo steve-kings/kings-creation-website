@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Kings Creation Agency - Professional Graphics & Web Development</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjYwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnPjx0ZXh0IGZvbnQtd2VpZ2h0PSJib2xkIiBmb250LWZhbWlseT0iUG9wcGlucyIgZm9udC1zaXplPSIyNiIgeT0iMzkiIHg9IjQwIiBmaWxsPSIjMEYxRTRDIj5LQ0E8L3RleHQ+PHBhdGggZD0ibTQzLjA0OTM0LDYuNTY4MTFjNC4wOTU2MiwwLjA5NzYyIDguMjMyNTcsMi42NzY3NiA5LjMxNjk3LDcuNTYwMDJjMS4wMTY4LDQuNTcxNTQgLTIuMDI0MjMsOS4wNTY1MiAtNi42OTQ1OSwxMC43MzAxNC00LjY4NDU3LDEuNjczNjIgLTEwLjI5MjQyLC0wLjk3OTY3IC0xMi4wNTU3NiwtNS45MjY3NmMtMS4zMDI1NiwtMy42Nzk0MSAwLjQ1NTY3LC04LjMyOTQzIDMuOTY5MTksLTEwLjQwMjIyYzEuNjMyNTMsLTAuOTU5OTggMy41MDE4MywtMS40Njk2IDUuNDY0MTksLTEuOTYxMTl6IiBzdHJva2U9IiMwRjFFNEMiIGZpbGw9IiNGRjhDMDAiLz48cGF0aCBkPSJtNDYuMTIxODQsMTUuMTYxMDJsMi40MTc4MSwzLjIwOTc2YzAuMDg2MzMsMC4xMTYyIDAuMjMyNTUsMC4xNjYyOSAwLjM3MTQxLDAuMTIwNjRsNC4wMTU1MSwtMS4zMjQ4NWMwLjIwMzQxLC0wLjA2Njk0IDAuMjc2MDIsLTAuMzIzOTEgMC4xMzc4MSwtMC40ODkyOWwtMi41NTU5OCwtMy4wNjM1NmMtMC4wODY0NywtMC4xMDI3NSAtMC4wOTg2NSwtMC4yNDAyMyAtMC4wMzE0MywtMC4zNTUwOWwxLjIzODg5LC0yLjExNDgzYzAuMTM0NTEsLTAuMjMwMTcgLTAuMDU5NzcsLTAuNTAxOTMgLTAuMzI3MzEsLTAuNDU2NThsLTIuMjAzMjcsMC4zNzY5NGMtMC4xMzI3OSwwLjAyMjczIC0wLjI2NjQsLTAuMDIzNTMgLTAuMzQ3MTcsLTAuMTIwMjNsLTEuNDYyNzEsLTEuNzU3ODVjLTAuMTc3NTMsLTAuMjEzMTIgLTAuNTE0MTEsLTAuMTU3MjUgLTAuNjAwODUsMC4wOTk2NGwtMC43MTkwNCwyLjEzNTc2Yy0wLjA0MjM2LDAuMTI2MDQgLTAuMTUwOTYsMC4yMTU5NSAtMC4yODI3MiwwLjIzNDM5bC0yLjM3MzQ0LDAuMzMzODVjLTAuMjY1ODcsMC4wMzc0IC0wLjM2OTgxLDAuMzU1ODkgLTAuMTc0MTksMC41MzMzbDEuNjQxNzcsMS40OTE3NWMwLjA5NzU5LDAuMDg4NDYgMC4xMzc3NSwwLjIyMDYzIDAuMTA0NzksMC4zNDY5MmwtMC42NjcwNywyLjU1NDA2Yy0wLjA2Njc4LDAuMjU1MzEgMC4xOTMyMiwwLjQ2NDg3IDAuNDM2MjUsMC4zNTA0NmwyLjA4MTI5LC0wLjk4MDQxYzAuMTE5ODksLTAuMDU2NTEgMC4yNjE5OSwtMC4wNDc5MiAwLjM3MzcsMC4wMjIzMXoiIHN0cm9rZT0iI0ZGOEMwMCIgZmlsbD0iI0ZGRkZGRiIvPjwvZz48L3N2Zz4=">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toastNotification">
+        <div class="icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="content">
+            <p>Message sent successfully!</p>
+        </div>
+        <button class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Learn More Modals -->
+    <div class="modal-overlay" id="modal-technology">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-technology')">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="modal-title">Modern Technology</h2>
+            <div class="modal-body">
+                <p>At Kings Creation Agency, we pride ourselves on staying at the forefront of technological advancement in web development and graphic design. Our commitment to embracing modern technology ensures that our clients receive cutting-edge solutions that are not only visually stunning but also functionally superior.</p>
+                
+                <h3>Web Development Technologies We Use</h3>
+                <ul>
+                    <li><strong>Front-End Development:</strong> HTML5, CSS3, JavaScript (ES6+), React.js, Vue.js, Angular</li>
+                    <li><strong>Back-End Development:</strong> Node.js, PHP, Python, Laravel, Express.js</li>
+                    <li><strong>Database Solutions:</strong> MySQL, MongoDB, PostgreSQL, Firebase</li>
+                    <li><strong>Content Management Systems:</strong> WordPress, Shopify, Drupal, Magento</li>
+                    <li><strong>Progressive Web Apps (PWAs):</strong> For enhanced mobile experiences</li>
+                    <li><strong>JAMstack Architecture:</strong> For better performance and security</li>
+                </ul>
+                
+                <h3>Benefits of Our Modern Technology Approach</h3>
+                <p>By utilizing the latest technologies, we deliver websites that are:</p>
+                <ul>
+                    <li><strong>Fast Loading:</strong> Optimized for speed with minimal load times</li>
+                    <li><strong>Highly Secure:</strong> Built with security best practices</li>
+                    <li><strong>Scalable:</strong> Designed to grow with your business</li>
+                    <li><strong>SEO-Friendly:</strong> Structured for optimal search engine performance</li>
+                    <li><strong>Mobile-Optimized:</strong> Responsive across all devices and screen sizes</li>
+                </ul>
+                
+                <h3>Our Development Process</h3>
+                <p>We follow a systematic approach to implementing modern technologies:</p>
+                <ol>
+                    <li>We conduct thorough research to identify the most suitable technologies for your specific project requirements.</li>
+                    <li>We create a technology stack that aligns with your business goals and target audience.</li>
+                    <li>We develop prototypes to test performance and user experience before full implementation.</li>
+                    <li>We build your solution using clean, well-documented code that adheres to industry standards.</li>
+                    <li>We rigorously test across multiple browsers, devices, and platforms to ensure consistent functionality.</li>
+                    <li>We provide ongoing technical support and updates to keep your digital presence current.</li>
+                </ol>
+                
+                <p>Our dedication to modern technology doesn't just mean using the newest tools--it means implementing the right technologies that deliver real value to your business and your customers.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-responsive">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-responsive')">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="modal-title">Responsive Design</h2>
+            <div class="modal-body">
+                <p>In today's multi-device world, responsive design isn't just a feature--it's a necessity. At Kings Creation Agency, we specialize in creating websites that deliver a seamless, optimized experience across all devices, from desktop monitors to smartphones and tablets.</p>
+                
+                <h3>Why Responsive Design Matters</h3>
+                <p>With over 50% of global web traffic coming from mobile devices, having a responsive website is crucial for several reasons:</p>
+                <ul>
+                    <li><strong>Improved User Experience:</strong> Users can easily navigate and interact with your site regardless of the device they're using</li>
+                    <li><strong>Better SEO Rankings:</strong> Google prioritizes mobile-friendly websites in its search rankings</li>
+                    <li><strong>Higher Conversion Rates:</strong> Responsive sites typically see higher engagement and conversion metrics</li>
+                    <li><strong>Cost Effectiveness:</strong> Maintaining one responsive site is more efficient than separate desktop and mobile versions</li>
+                    <li><strong>Future-Proofing:</strong> Your site will adapt to new devices and screen sizes as technology evolves</li>
+                </ul>
+                
+                <h3>Our Responsive Design Approach</h3>
+                <p>We implement responsive design using several key methodologies:</p>
+                <ul>
+                    <li><strong>Mobile-First Design:</strong> We start with the mobile experience and scale up, ensuring solid performance on smaller devices</li>
+                    <li><strong>Fluid Grid Layouts:</strong> Using relative units rather than fixed pixels to allow content to scale based on screen size</li>
+                    <li><strong>Flexible Images:</strong> Images that resize within their containing elements</li>
+                    <li><strong>CSS Media Queries:</strong> Applying different styles based on device characteristics like screen width, height, and orientation</li>
+                    <li><strong>Touch-Friendly Navigation:</strong> Larger hit areas and intuitive gestures for touchscreen users</li>
+                    <li><strong>Optimized Typography:</strong> Text that remains readable across all devices</li>
+                </ul>
+                
+                <h3>Testing Across Devices</h3>
+                <p>Every responsive website we create undergoes rigorous testing on multiple devices and browsers to ensure consistent functionality and appearance. Our testing process includes:</p>
+                <ul>
+                    <li>Testing on iOS and Android devices</li>
+                    <li>Testing across Chrome, Safari, Firefox, and Edge browsers</li>
+                    <li>Performance testing to ensure speed on mobile networks</li>
+                    <li>Usability testing to verify intuitive navigation</li>
+                </ul>
+                
+                <p>With our responsive design expertise, your website will look great and function perfectly for all users, regardless of how they access your content--providing them with an optimal viewing and interaction experience.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-seo">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-seo')">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2 class="modal-title">SEO Friendly</h2>
+            <div class="modal-body">
+                <p>Creating a beautiful website is only half the battle--ensuring that it gets found by your target audience is equally important. At Kings Creation Agency, we build websites with search engine optimization (SEO) as a fundamental consideration, not an afterthought.</p>
+                
+                <h3>Our SEO-Friendly Development Approach</h3>
+                <p>We implement numerous SEO best practices during the website development process:</p>
+                <ul>
+                    <li><strong>Clean, Semantic HTML:</strong> Using proper HTML5 elements that help search engines understand your content structure</li>
+                    <li><strong>Mobile Responsiveness:</strong> Ensuring your site performs well on all devices, a key ranking factor for Google</li>
+                    <li><strong>Fast Loading Speeds:</strong> Optimizing images, minimizing code, and leveraging browser caching</li>
+                    <li><strong>Secure Connections:</strong> Implementing HTTPS encryption, which is a ranking signal</li>
+                    <li><strong>Crawlable Link Structure:</strong> Creating a logical site architecture that search engines can easily navigate</li>
+                    <li><strong>Optimized URLs:</strong> Creating clean, descriptive URLs that include relevant keywords</li>
+                    <li><strong>Schema Markup:</strong> Adding structured data to help search engines understand your content context</li>
+                </ul>
+                
+                <h3>Content Optimization</h3>
+                <p>We also help with content structure for SEO effectiveness:</p>
+                <ul>
+                    <li><strong>Keyword Research:</strong> Identifying relevant search terms your audience is using</li>
+                    <li><strong>Content Hierarchy:</strong> Proper use of H1, H2, H3 tags to structure content</li>
+                    <li><strong>Meta Data:</strong> Crafting compelling titles and descriptions that encourage clicks from search results</li>
+                    <li><strong>Image Optimization:</strong> Including alt text and optimizing image file names</li>
+                    <li><strong>Internal Linking:</strong> Creating a strategic internal linking structure</li>
+                </ul>
+                
+                <h3>Technical SEO Considerations</h3>
+                <p>We address technical SEO factors that many developers overlook:</p>
+                <ul>
+                    <li><strong>XML Sitemaps:</strong> Creating and submitting sitemaps to help search engines find all your content</li>
+                    <li><strong>Robots.txt Configuration:</strong> Properly instructing search engines on what to crawl</li>
+                    <li><strong>Canonical Tags:</strong> Preventing duplicate content issues</li>
+                    <li><strong>404 Error Handling:</strong> Creating custom 404 pages that help users find their way back</li>
+                    <li><strong>Page Speed Optimization:</strong> Minimizing factors that slow down your site</li>
+                </ul>
+                
+                <h3>SEO-Ready for Launch</h3>
+                <p>When we deliver your website, it will be fully prepared for SEO success with:</p>
+                <ul>
+                    <li>Integration with Google Analytics and Search Console</li>
+                    <li>Mobile-friendly validation</li>
+                    <li>Core Web Vitals optimization</li>
+                    <li>SEO audit report with recommendations for ongoing improvement</li>
+                </ul>
+                
+                <p>Our SEO-friendly approach to web development helps ensure that your beautiful new website isn't just seen by visitors--it's found by them in the first place.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/my-logo.png" alt="Kings Creation Agency">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide hero-slide" style="background-image: url('images/wesite\ dev\ image\ 2.png');">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Creative Graphics & Web Design</h1>
+                        <p class="hero-subtitle">We create visually stunning designs that elevate your brand and drive growth</p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="hero-btn btn-primary">Our Services</a>
+                            <a href="#contact" class="hero-btn btn-outline">Get In Touch</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 -->
+                <div class="swiper-slide hero-slide" style="background-image: url('images/wesite\ dev\ image\ 3.png');">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Innovative Web Development</h1>
+                        <p class="hero-subtitle">Building responsive, user-friendly websites with cutting-edge technologies</p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="hero-btn btn-primary">Explore Services</a>
+                            <a href="#portfolio" class="hero-btn btn-outline">View Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 -->
+                <div class="swiper-slide hero-slide" style="background-image: url('images/wesite\ dev\ image\ 9.png');">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Professional Brand Identity</h1>
+                        <p class="hero-subtitle">Creating memorable logos and business materials that stand out from the competition</p>
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="hero-btn btn-primary">See Our Work</a>
+                            <a href="#contact" class="hero-btn btn-outline">Start Your Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- Add Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-shape"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="about-img-container scroll-animation-slide-left">
+                        <img src="images/woman-working-laptop.jpg" alt="About Kings Creation Agency - Our creative team working together" class="about-img lazy-image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content scroll-animation-slide-right">
+                        <h2 class="section-title">About Our Agency</h2>
+                        <p class="about-text">
+                            Kings Creation Agency is a full-service creative agency specializing in graphic design and web development. With years of experience and a passion for creativity, we help businesses establish a strong online presence and create visual identities that resonate with their target audience.
+                        </p>
+                        <p class="about-text">
+                            Our team of talented designers and developers work collaboratively to deliver exceptional results that exceed our clients' expectations. Whether you need a simple business card or a complex e-commerce website, we have the expertise and creativity to bring your vision to life.
+                        </p>
+                        
+                        <!-- Stats Container - Updated to match your screenshot -->
+                        <div class="row">
+                            <div class="col-6 col-md-6 mb-3">
+                                <div class="stat-item">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-smile"></i>
+                                    </div>
+                                    <div class="stat-number" data-count="150">0</div>
+                                    <div class="stat-text">Happy Clients</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 mb-3">
+                                <div class="stat-item">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="stat-number" data-count="250">0</div>
+                                    <div class="stat-text">Projects Completed</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 mb-3">
+                                <div class="stat-item">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                    <div class="stat-number" data-count="15">0</div>
+                                    <div class="stat-text">Awards Won</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 mb-3">
+                                <div class="stat-item">
+                                    <div class="stat-icon">
+                                        <i class="fas fa-calendar-check"></i>
+                                    </div>
+                                    <div class="stat-number" data-count="5">0</div>
+                                    <div class="stat-text">Years Experience</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section - Based on your screenshot -->
+    <section class="why-choose-section" id="why-choose">
+        <div class="container">
+            <h2 class="why-choose-title">Why Choose Us</h2>
+            <p class="why-choose-description">We're committed to delivering exceptional results that exceed your expectations</p>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="feature-title">Modern Technology</h3>
+                        <p class="feature-text">
+                            We stay up-to-date with the latest technologies and trends to deliver websites that are not only beautiful but also fast and functional.
+                        </p>
+                        <a href="#" class="feature-btn" onclick="openModal('modal-technology')">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Responsive Design</h3>
+                        <p class="feature-text">
+                            All our websites are built with responsive design, ensuring they look great and function perfectly on all devices and screen sizes.
+                        </p>
+                        <a href="#" class="feature-btn" onclick="openModal('modal-responsive')">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3 class="feature-title">SEO Friendly</h3>
+                        <p class="feature-text">
+                            We optimize your website for search engines, helping you improve your online visibility and attract more potential customers.
+                        </p>
+                        <a href="#" class="feature-btn" onclick="openModal('modal-seo')">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="feature-title">Creative Design</h3>
+                        <p class="feature-text">
+                            Our team of talented designers creates visually stunning designs that capture your brand's essence and resonate with your target audience.
+                        </p>
+                        <a href="#" class="feature-btn" onclick="openModal('modal-technology')">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="feature-title">Dedicated Support</h3>
+                        <p class="feature-text">
+                            Our team provides ongoing support and maintenance to ensure your website continues to perform at its best long after launch.
+                        </p>
+                        <a href="#" class="feature-btn" onclick="openModal('modal-responsive')">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="feature-title">Timely Delivery</h3>
+                        <p class="feature-text">
+                            We understand the importance of deadlines and strive to deliver all projects on time without compromising on quality.
+                        </p>
+                        <a href="#" class="feature-btn" onclick="openModal('modal-seo')">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <h2 class="section-title text-center scroll-animation">Our Services</h2>
+                    <p class="section-description scroll-animation" data-delay="200">We offer a comprehensive range of creative services to meet all your design and development needs</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4 scroll-animation-slide-left">
+                    <div class="service-card">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <div class="service-icon-wrapper mx-auto">
+                                    <div class="service-icon">
+                                        <i class="fas fa-palette"></i>
+                                    </div>
+                                </div>
+                                <h3 class="service-title">Graphics Design</h3>
+                                <p class="service-description">
+                                    Our graphic design services help you create a strong visual identity that communicates your brand values and captures your audience's attention.
+                                </p>
+                            </div>
+                            <ul class="service-list">
+                                <li>Posters & Flyers</li>
+                                <li>Business Cards</li>
+                                <li>Company Profiles</li>
+                                <li>Event Posters</li>
+                                <li>Infographics</li>
+                                <li>Restaurant Menus</li>
+                                <li>Banners & Signage</li>
+                                <li>Logo Design</li>
+                                <li>Brand Identity</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4 scroll-animation-slide-right">
+                    <div class="service-card">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <div class="service-icon-wrapper mx-auto">
+                                    <div class="service-icon">
+                                        <i class="fas fa-laptop-code"></i>
+                                    </div>
+                                </div>
+                                <h3 class="service-title">Web Development</h3>
+                                <p class="service-description">
+                                    We build modern, responsive websites that not only look great but also provide an excellent user experience across all devices.
+                                </p>
+                            </div>
+                            <ul class="service-list">
+                                <li>E-Commerce Websites</li>
+                                <li>Church Websites</li>
+                                <li>Company Websites</li>
+                                <li>Business Websites</li>
+                                <li>School Websites</li>
+                                <li>NGO Websites</li>
+                                <li>Management Systems</li>
+                                <li>Custom Web Applications</li>
+                                <li>Website Maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <h2 class="section-title text-center scroll-animation">Our Process</h2>
+                    <p class="section-description scroll-animation" data-delay="200">Our streamlined workflow ensures efficient project delivery and exceptional results</p>
+                </div>
+            </div>
+            
+            <div class="process-container">
+                <!-- Process Item 1 -->
+                <div class="process-item scroll-animation-slide-right">
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Discovery</h3>
+                        <p class="process-text">
+                            We begin by understanding your business, goals, target audience, and requirements. This initial research phase forms the foundation for a successful project.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Process Item 2 -->
+                <div class="process-item scroll-animation-slide-right" data-delay="100">
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Planning</h3>
+                        <p class="process-text">
+                            Based on our research, we develop a strategic plan outlining the project scope, timeline, deliverables, and key milestones to ensure smooth execution.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Process Item 3 -->
+                <div class="process-item scroll-animation-slide-right" data-delay="200">
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Design</h3>
+                        <p class="process-text">
+                            Our creative team develops design concepts that align with your brand identity and project goals, focusing on aesthetics and user experience.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Process Item 4 -->
+                <div class="process-item scroll-animation-slide-right" data-delay="300">
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Development</h3>
+                        <p class="process-text">
+                            Once the design is approved, we begin the development phase, transforming the design into a functional website or graphic product with attention to detail.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Process Item 5 -->
+                <div class="process-item scroll-animation-slide-right" data-delay="400">
+                    <div class="process-number">05</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Testing</h3>
+                        <p class="process-text">
+                            We conduct thorough testing to ensure quality, functionality, and compatibility across different devices, browsers, and platforms.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Process Item 6 -->
+                <div class="process-item scroll-animation-slide-right" data-delay="500">
+                    <div class="process-number">06</div>
+                    <div class="process-content">
+                        <h3 class="process-title">Launch & Support</h3>
+                        <p class="process-text">
+                            After final approval, we launch your project and provide ongoing support and maintenance to ensure continued success and optimal performance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <h2 class="section-title text-center scroll-animation">Our Portfolio</h2>
+                    <p class="section-description scroll-animation" data-delay="200">Explore our recent projects and see how we've helped businesses achieve their goals</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-filter-container scroll-animation" data-delay="300">
+                <div class="portfolio-filter active" data-filter="all">All</div>
+                <div class="portfolio-filter" data-filter="web">Web Design</div>
+                <div class="portfolio-filter" data-filter="graphic">Graphic Design</div>
+                <div class="portfolio-filter" data-filter="logo">Logo Design</div>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item scroll-animation-zoom" data-category="web" data-delay="100">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0ZGOEMwMCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0ZGQjcwMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxnPjxyZWN0IHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIiBmaWxsPSIjMEYxRTRDIi8+PHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0MCIgeD0iMTEwIiB5PSI2MCIgZmlsbD0iIzI2M2E2MyIgcng9IjUiLz48cmVjdCB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHg9IjExMCIgeT0iNjAiIGZpbGw9InVybCgjZ3JhZDEpIiByeD0iNSIvPjxjaXJjbGUgY3g9IjEzMCIgY3k9IjgwIiByPSIxMCIgZmlsbD0iI2ZmZiIvPjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB4PSIxMTAiIHk9IjEyMCIgZmlsbD0iIzI2M2E2MyIgcng9IjUiLz48cmVjdCB3aWR0aD0iMTYwIiBoZWlnaHQ9IjIwMCIgeD0iMzMwIiB5PSIxMjAiIGZpbGw9IiMyNjNhNjMiIHJ4PSI1Ii8+PHJlY3Qgd2lkdGg9IjM4MCIgaGVpZ2h0PSI0MCIgeD0iMTEwIiB5PSIzNDAiIGZpbGw9IiMyNjNhNjMiIHJ4PSI1Ii8+PHRleHQgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE0IiB4PSIxODAiIHk9IjgwIiBmaWxsPSIjRkZGRkZGIj5CdXNpbmVzcyBXZWJzaXRlPC90ZXh0Pjwvc3ZnPg==" alt="Business Website Project - Responsive web design for corporate client" class="portfolio-img lazy-image">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Business Website</h3>
+                        <p class="portfolio-category">Web Development</p>
+                        <div class="portfolio-buttons">
+                            <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-btn"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item scroll-animation-zoom" data-category="graphic" data-delay="200">
+                    <img src="/images/Mt Kenya Hike 2025.png" alt="Event Poster Design - Promotional material for community event" class="portfolio-img lazy-image">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Event Poster</h3>
+                        <p class="portfolio-category">Graphic Design</p>
+                        <div class="portfolio-buttons">
+                            <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-btn"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item scroll-animation-zoom" data-category="logo" data-delay="300">
+                    <img src="/images/logo.png" alt="Company Logo Design - Modern branding for tech startup" class="portfolio-img lazy-image">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Company Logo</h3>
+                        <p class="portfolio-category">Logo Design</p>
+                        <div class="portfolio-buttons">
+                            <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-btn"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item scroll-animation-zoom" data-category="web" data-delay="400">
+                    <img src="/images/screencapture-epicstoresales-co-ke-shop-2-2025-05-24-22_33_29.png" alt="ecmmerce Website Project - Community focused website design" class="portfolio-img lazy-image">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Ecommerce Website</h3>
+                        <p class="portfolio-category">Web Development</p>
+                        <div class="portfolio-buttons">
+                            <a href="https://epicstoresales.co.ke/" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-btn"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item scroll-animation-zoom" data-category="graphic" data-delay="500">
+                    <img src="/images/bobo menu 2.png" class="portfolio-img lazy-image">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Restaurant Menu</h3>
+                        <p class="portfolio-category">Graphic Design</p>
+                        <div class="portfolio-buttons">
+                            <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-btn"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item scroll-animation-zoom" data-category="graphic" data-delay="600">
+                    <img src="/images/Hamony birthday Post.png" class="portfolio-img lazy-image">
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Birthday poster</h3>
+                        <p class="portfolio-category">Graphic Design</p>
+                        <div class="portfolio-buttons">
+                            <a href="#" class="portfolio-btn"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-btn"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="testimonial-section">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <h2 class="section-title text-center scroll-animation">What Our Clients Say</h2>
+                    <p class="section-description scroll-animation" data-delay="200">Feedback from our satisfied clients about their experience working with us</p>
+                </div>
+            </div>
+            
+            <div class="swiper testimonial-container">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card scroll-animation-fade-in">
+                            <p class="testimonial-text">
+                                "Kings Creation Agency did an amazing job designing our business website. Their creativity and attention to detail exceeded our expectations. The website is not only visually appealing but also user-friendly and has significantly improved our online presence."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAiIGhlaWdodD0iNzAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PGNpcmNsZSBjeD0iMzUiIGN5PSIzNSIgcj0iMzUiIGZpbGw9IiMwRjFFNEMiLz48Y2lyY2xlIGN4PSIzNSIgY3k9IjI1IiByPSIxMiIgZmlsbD0iI0U4RThFOCIvPjxwYXRoIGQ9Ik02MCw1NWMwLC0xNSAtMTEsLTI1IC0yNSwtMjVjLTE0LDAgLTI1LDEwIC0yNSwyNSIgc3Ryb2tlPSIjRThFOEU4IiBzdHJva2Utd2lkdGg9IjE4IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L2c+PC9zdmc+" alt="John Smith - CEO, ABC Corporation" class="lazy-image">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <h4>Fred mwai</h4>
+                                    <p>project manager</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card scroll-animation-fade-in" data-delay="100">
+                            <p class="testimonial-text">
+                                "We hired Kings Creation Agency to create our company logo and business cards, and the results were outstanding. They took the time to understand our brand values and created designs that perfectly captured our identity. The team was professional, responsive, and a pleasure to work with."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAiIGhlaWdodD0iNzAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PGNpcmNsZSBjeD0iMzUiIGN5PSIzNSIgcj0iMzUiIGZpbGw9IiMwRjFFNEMiLz48Y2lyY2xlIGN4PSIzNSIgY3k9IjI1IiByPSIxMiIgZmlsbD0iI0U4RThFOCIvPjxwYXRoIGQ9Ik02MCw1NWMwLC0xNSAtMTEsLTI1IC0yNSwtMjVjLTE0LDAgLTI1LDEwIC0yNSwyNSIgc3Ryb2tlPSIjRThFOEU4IiBzdHJva2Utd2lkdGg9IjE4IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L2c+PC9zdmc+" alt="Sarah Johnson - Marketing Director, XYZ Company" class="lazy-image">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <h4>Sarah nyanguthii</h4>
+                                    <p>Marketing Director</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card scroll-animation-fade-in" data-delay="200">
+                            <p class="testimonial-text">
+                                "The team at Kings Creation Agency designed our church website, and we couldn't be happier with the results. They were patient, understanding, and worked closely with us to create a website that aligns with our values and meets the needs of our congregation. We highly recommend their services."
+                            </p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-author-img">
+                                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAiIGhlaWdodD0iNzAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PGNpcmNsZSBjeD0iMzUiIGN5PSIzNSIgcj0iMzUiIGZpbGw9IiMwRjFFNEMiLz48Y2lyY2xlIGN4PSIzNSIgY3k9IjI1IiByPSIxMiIgZmlsbD0iI0U4RThFOCIvPjxwYXRoIGQ9Ik02MCw1NWMwLC0xNSAtMTEsLTI1IC0yNSwtMjVjLTE0LDAgLTI1LDEwIC0yNSwyNSIgc3Ryb2tlPSIjRThFOEU4IiBzdHJva2Utd2lkdGg9IjE4IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48L2c+PC9zdmc+" alt="Pastor Michael Thomas - Grace Community Church" class="lazy-image">
+                                </div>
+                                <div class="testimonial-author-info">
+                                    <h4>Pastor Wilson</h4>
+                                    <p>Ack Church</p>
+                                    <div class="testimonial-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Fixed W3Form -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <h2 class="section-title text-center contact-title scroll-animation">Contact Us</h2>
+                    <p class="section-description text-white scroll-animation" data-delay="200">
+                        Have a project in mind? Reach out to us today and let's discuss how we can help bring your vision to life.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="contact-info-box h-100 scroll-animation-slide-left">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5>Our Location</h5>
+                                <p>kartina, maincampus</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5>Phone Number</h5>
+                                <p>0788419041 / 0769956286</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5>Email Address</h5>
+                                <p>kingscreationagency635@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-info-content">
+                                <h5>flelancing Working days</h5>
+                                <p>Monday - Sat<br>
+                                Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <div class="contact-form scroll-animation-slide-right">
+                        <h3 class="form-title">Send Us A Message</h3>
+                        
+                        <!-- Improved Form Status Messages -->
+                        <div class="form-status success" id="formSuccessMessage">
+                            <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully.
+                        </div>
+                        <div class="form-status error" id="formErrorMessage">
+                            <i class="fas fa-exclamation-circle"></i> <span id="errorText">Oops! Something went wrong. Please try again.</span>
+                        </div>
+                        
+                        <!--  W3Form Implementation -->
+                        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                            <!-- Required: Web3Forms Access Key -->
+                            <input type="hidden" name="access_key" value="a965b1c1-10a6-4700-8ca4-40189d986b99">
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required>
+                                        <div class="invalid-feedback">Please enter your name</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                        <div class="invalid-feedback">Please enter a valid email address</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                <div class="invalid-feedback">Please enter a subject</div>
+                            </div>
+                            
+                            <div class="form-group mb-3">
+                                <textarea class="form-control" name="message" id="message" placeholder="Your Message" rows="5" required></textarea>
+                                <div class="invalid-feedback">Please enter your message</div>
+                            </div>
+                            
+                            <!-- Include site info for Web3Forms -->
+                            <input type="hidden" name="from_name" value="Kings Creation Agency Contact Form">
+                            
+                            <!-- Anti-spam Honeypot field -->
+                            <input type="checkbox" name="botcheck" class="d-none" style="display: none;">
+                            
+                            <button type="submit" class="submit-btn" id="submit-btn">
+                                <span id="submit-text">Send Message</span>
+                                <span id="submit-spinner" class="loading-spinner" style="display: none;"></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="footer-logo">
+                        <img src="images/my-logo.png" alt="Kings Creation Agency">
+                    </div>
+                    <p class="footer-text">
+                        Kings Creation Agency is a full-service creative agency specializing in graphic design and web development. We are passionate about creating stunning designs that help businesses establish a strong online presence.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="footer-social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-5">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="footer-title">Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Logo Design</a></li>
+                        <li><a href="#">Business Cards</a></li>
+                        <li><a href="#">E-Commerce Websites</a></li>
+                        <li><a href="#">Company Profiles</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-text">Subscribe to our newsletter to receive updates on our latest projects and design tips.</p>
+                    <div class="footer-newsletter">
+                        <form class="newsletter-form">
+                            <input type="email" class="newsletter-input" placeholder="Your Email" required>
+                            <button type="submit" class="newsletter-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <h4 class="footer-title mt-4">Contact</h4>
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            0788419041 / 0769956286
+                        </div>
+                    </div>
+                    
+                    <div class="footer-contact-item">
+                        <div class="footer-contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="footer-contact-text">
+                            kingscreationagency635@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <p class="mb-0">&copy; <span id="current-year">2023</span> Kings Creation Agency. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp & Call Buttons -->
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/254788419041" class="whatsapp-btn" target="_blank" aria-label="Contact us on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    
+    <div class="floating-call">
+        <a href="tel:+254788419041" class="call-btn" aria-label="Call us">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+    </div>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
